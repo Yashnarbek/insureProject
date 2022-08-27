@@ -665,6 +665,9 @@ body {
 }
 .site-footer {
   background-color: #FAFAFA;
+  background-image: url("/images/line.svg");
+  background-repeat: no-repeat;
+  background-position: calc(50% - 100px) -400px;
 }
 
 .site-footer__top {
@@ -857,6 +860,9 @@ body {
   }
 }
 @media only screen and (min-width: 992px) {
+  .site-footer {
+    background-position: calc(50% - 450px) -400px;
+  }
   .footer-bottom {
     display: flex;
     padding-top: 50px;
