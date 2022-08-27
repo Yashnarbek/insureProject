@@ -1,0 +1,99 @@
+.hero {
+    padding-bottom: 50px;
+    background-color: #2D2641;
+    background-image: url("/images/line.svg");
+    background-position: left -550px top 150px;
+    background-repeat: no-repeat;
+}
+.hero__img {
+    width: 100%;
+    margin-bottom: 70px;
+}
+.hero__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hero__heading {
+    margin-bottom: 15px;
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 48px;
+    text-align: center;
+    letter-spacing: -0.666667px;
+    color: #FFFFFF;    
+}
+.hero__title {
+    @include heading-text-unstyle;
+    margin-bottom: 25px;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;    
+}
+.hero__link {
+    padding: 13px 30px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 15px;
+    text-align: center;
+    letter-spacing: 1.5px;
+    background-color: transparent;
+    color: #FFFFFF;    
+    border: 2px solid #FFFFFF;
+}
+.hero__link:hover {
+    background-color: #fff;
+    color: #2C2830;
+}
+@include mobile-first (992px) {
+    .hero {
+        padding-top: 170px;
+        padding-bottom: 130px;
+        background-image: url("/images/line.svg");
+        background-repeat: no-repeat;
+        background-position: right calc(50% - 650px) top -100px;
+    }
+    .hero__img {
+        position: absolute;
+        top: 220px;
+        right: calc(50% - 530px);
+        width: 500px;
+        height: 650px;
+    }
+    .hero__box {
+        align-items: flex-start;
+        width: 350px;
+    }
+    .hero__box::before {
+        content: "";
+        display: inline-block;
+        margin-top: -50px;
+        margin-bottom: 50px;
+        width: 150px;
+        height: 2px;
+        background-color: #fff;
+    }
+    .hero__heading {
+        text-align: start;
+    }
+    .hero__title {
+        text-align: start;
+    }
+}
+@include mobile-first (1060px) {
+    .hero__box {
+        width: 400px;
+    }
+}
+@include mobile-first (1250px) {
+    .hero__box {
+        width: 540px;
+    }
+}
+

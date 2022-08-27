@@ -1,0 +1,49 @@
+.site-footer {
+}
+.container {
+}
+.site-footer__wrapper {
+}
+.site-footer__top {
+    text-decoration: none;
+}
+.footer-top {
+    
+}
+.footer-top__list {
+    display: flex;
+    @include list-unstyle;
+}
+.footer-top__item:not(:last-child) {
+    margin-right: 16px;
+}
+.footer-top__social {
+}
+.site-footer__botom {
+}
+.footer-bottom {
+}
+.footer-bottom__company {
+}
+.footer-bottom__company-item {
+}
+.footer-bottom__company-link {
+}
+.footer-bottom__help {
+}
+.footer-bottom__help-item {
+}
+.footer-item__help-link {
+}
+.footer-bottom__contact {
+}
+.footer-bottom__contact-item {
+}
+.footer-bottom__contact-link {
+}
+.footer-bottom__others {
+}
+.footer-bottom__others-item {
+}
+.footer-bottom__others-link {
+}

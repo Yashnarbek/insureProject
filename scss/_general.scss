@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+}
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+img{
+    display: block;
+    height: auto;
+}
+html{
+    height: 100%;
+}
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    font-family: "Karla", "Arial", sans-serif;
+
+}
+
+
+.site-main{
+    flex-grow: 1;
+}
