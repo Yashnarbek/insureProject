@@ -1,0 +1,106 @@
+.site-header {
+    padding: 10px 0;
+}
+.site-header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.site-header__logo svg{
+    width: 100px;
+    height: 30px;
+}
+.site-header__search {
+    position: absolute;
+    left: 0;
+    top: 50px;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.site-header__inp {
+    width: 100%;
+    padding: 8px 8px 8px 50px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    background-color: #F8FAFD;
+    background-image: url("../images/seaarch.svg");
+    background-repeat: no-repeat;
+    background-position: left 10px center;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    border: none;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    color: #0000003d;
+}
+.site-header__inp::placeholder {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    color: rgba(0, 0, 0, 0.24);    
+}
+.site-header__inp:active {
+    background-image: none; 
+}
+.site-header__end {
+    display: flex;
+    align-items: center;
+}
+.light {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    padding: 10px;
+    background-image: url("../images/light.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    border: none;
+}
+.site-header__log-out {
+    padding: 5px 15px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;    
+
+    background-color: #0D75FF;
+    border: none;
+    border-radius: 4px;
+    color: #FFFFFF;
+}
+
+@include mobile-first (720px) {
+    .site-header {
+        padding-top: 11px;
+        padding-bottom: 11px;
+    }
+    .site-header__logo svg{
+        width: 225px;
+        height: 44px;
+    }
+    .site-header__search {
+        position: static;
+        width: 280px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    .site-header__inp {
+        padding: 10px 48px;
+    }
+    .site-header__log-out {
+        display: block;
+        padding: 10px 23px;
+    }
+}
+@include mobile-first(1100px) {
+    .site-header__search {
+        width: 670px;
+    }
+    .site-header__inp {
+        padding-top: 17px;
+        padding-bottom: 17px;
+    }
+}
